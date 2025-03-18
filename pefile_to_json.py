@@ -24,7 +24,10 @@ def save_pe_info_to_json(pe_file_path: str, json_file_path: str) -> None:
     with open(json_file_path, 'w') as json_file:
         json.dump(serializable_dict, json_file, indent=4)
 
-if __name__ == "__main__":
+def main():
     pe_file_path = "/Users/dave/Downloads/7z2409-x64.exe"
     json_file_path = "/Users/dave/Downloads/7z2409-x64.json"
     save_pe_info_to_json(pe_file_path, json_file_path)
+
+if __name__ == "__main__":
+    main() 
