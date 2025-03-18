@@ -50,7 +50,7 @@ json_file_path = "/path/to/output/file.json"  # Change to your desired output lo
 After modifying the paths, you can run the script directly:
 
 ```bash
-python pe_to_json.py
+python pefile_to_json.py
 ```
 
 ### Using as a Module
