@@ -29,8 +29,8 @@ pip install pefile
 
 Clone this repository:
 ```bash
-git clone https://github.com/zerodavesec/pefile-dictionary-to-json.git
-cd pefile-dict-to-json
+git clone https://github.com/zerodavesec/pefile-to-json.git
+cd pefile-to-json
 ```
 
 ## Usage
@@ -58,7 +58,7 @@ python pe_to_json.py
 You can also import and use the functions in your own code:
 
 ```python
-from pefile_dictionary_to_json import save_pe_info_to_json
+from pefile_to_json import save_pe_info_to_json
 
 # Convert a PE file to JSON (specify the actual paths)
 save_pe_info_to_json("path/to/your/file.exe", "path/to/your/output.json")
@@ -67,7 +67,7 @@ save_pe_info_to_json("path/to/your/file.exe", "path/to/your/output.json")
 You can also use the conversion function directly:
 
 ```python
-from pefile_dictionary_to_json import convert_to_serializable
+from pefile_to_json import convert_to_serializable
 
 # Convert any object with byte data to a serializable format
 serializable_data = convert_to_serializable(your_data)
